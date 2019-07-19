@@ -1,0 +1,4 @@
+-cp ./src/
+-neko run.n
+-lib hx3compat
+-main Run

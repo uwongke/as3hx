@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="std" type="Haxe">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../hx3compat/std" />
+    </CLASSES>
+    <JAVADOC />
+    <LIBRARY_FILE />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../hx3compat/std" />
+    </SOURCES>
+  </library>
+</component>
