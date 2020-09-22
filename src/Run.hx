@@ -57,7 +57,7 @@ class Run {
                 }
                 var out = dst;
                 ensureDirectoryExists(out);
-                var name = out.addTrailingSlash() + Writer.properCase(f.substr(0, -3), true) + ".hx";
+                var name = out.addTrailingSlash() + Writer.properCase(f.substr(0, -3), true) + ".hx.ready";
                 Sys.println("target HX file: " + name);
                 var fw = File.write(name, false);
                 warnings.set(name, writer.process(program, fw));
@@ -86,7 +86,7 @@ class Run {
     //file directory, then it is considered the expected output of the conversion
     //and is diffed against the actual output
     static function verifyGeneratedFile(file:String, src:String, outFile:String) {
-        var test = src.addTrailingSlash() + Writer.properCase(file.substr(0, -3), true) + ".hx";
+        var test = src.addTrailingSlash() + Writer.properCase(file.substr(0, -3), true) + ".hx.ready";
         if (FileSystem.exists(test) && FileSystem.exists(outFile)) {
             Sys.println("expected HX file: " + test);
             var expectedFile = File.getContent(test);
