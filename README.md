@@ -12,7 +12,7 @@ Build with debug output when converting files.
 
 ### Use
 
-    neko run.n test/ out/
+    neko run.n new/ out/
     
 This will take all the ActionScript 3 files in the test/ directory 
 and generate the corresponding Haxe files in out/
